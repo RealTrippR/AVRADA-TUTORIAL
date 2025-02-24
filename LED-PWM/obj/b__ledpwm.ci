@@ -1,0 +1,6 @@
+graph: { title: "b__ledpwm.adb"
+node: { title: "adainit" label: "adainit\nb__ledpwm.adb:11:4\n2 bytes (static)\n0 dynamic objects" }
+node: { title: "main" label: "main\nb__ledpwm.adb:20:4\n2 bytes (static)\n0 dynamic objects" }
+node: { title: "_ada_ledpwm" label: "ada_main_program\nb__ledpwm.adb:17:14" shape : ellipse }
+edge: { sourcename: "main" targetname: "_ada_ledpwm" label: "b__ledpwm.adb:23:7" }
+}

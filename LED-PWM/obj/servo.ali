@@ -1,0 +1,107 @@
+V "GNAT Lib v12"
+M P W=b
+A -Og
+A -gnatA
+A --RTS=C:\Users\TrippR\AppData\Local\alire\cache\builds\avrada_rts_2.0.1_92a5f15a\71110aa50bcfe6fa5f256d9be5e6243378c23ab3e5fbf605bd2ecf4935bfaa91\
+A -fverbose-asm
+A -gnateDMCU=atmega328p
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -gdwarf-2
+A -mdouble=32
+A -mlong-double=64
+A -mmcu=avr5
+A -mn-flash=1
+A -mno-skip-bug
+P ZX
+
+RN
+RR SIMPLE_BARRIERS
+RR NO_DYNAMIC_ATTACHMENT
+RR NO_ENUMERATION_MAPS
+RR NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RR NO_EXCEPTION_PROPAGATION
+RR NO_FINALIZATION
+RR NO_IO
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_LOCAL_PROTECTED_OBJECTS
+RR NO_PROTECTED_TYPE_ALLOCATORS
+RR NO_REENTRANCY
+RR NO_SELECT_STATEMENTS
+RR NO_TASK_ATTRIBUTES_PACKAGE
+RR NO_TASK_TERMINATION
+RR NO_TASKING
+RR STATIC_PRIORITIES
+RR STATIC_STORAGE_SIZE
+RR IMMEDIATE_RECLAMATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_WIDE_CHARACTERS
+RR MAX_ENTRY_QUEUE_LENGTH=1
+
+U servo%b		servo.adb		9045524d NE OO SU IL
+W avr%s			avr.adb			avr.ali
+W avr.atmega328p%s	avr-atmega328p.ads	avr-atmega328p.ali
+W avr.mcu%s		avr-mcu.ads		avr-mcu.ali
+W avr.timer1%s		avr-timer1.adb		avr-timer1.ali
+W avr.wait%s		avr-wait.adb		avr-wait.ali
+W avrada_rts_config%s	avrada_rts_config.ads	avrada_rts_config.ali
+
+D ada.ads		20250117231900 76789da1 ada%s
+D a-unccon.ads		20250117231900 f9eb8f06 ada.unchecked_conversion%s
+D avr.ads		20250117231902 f5a0cfa0 avr%s
+D avr-atmega328p.ads	20250117231902 789445eb avr.atmega328p%s
+D avr-mcu.ads		20250117231902 748c31c4 avr.mcu%s
+D avr-timer1.ads	20250117231906 f1f11100 avr.timer1%s
+D avr-wait.ads		20250117231904 69125730 avr.wait%s
+D avr-wait.adb		20250117231904 3c40e7a4 avr.wait%b
+D avrada_rts_config.ads	20250118063826 02e260ab avrada_rts_config%s
+D interfac.ads		20250117231900 edec285f interfaces%s
+D servo.adb		20250206041502 f3fccf59 servo%b
+D system.ads		20250117231900 aa8617de system%s
+D s-maccod.ads		20250117231900 3a1fd69f system.machine_code%s
+D s-unstyp.ads		20250117231900 66404be3 system.unsigned_types%s
+D c:\users\trippr\appdata\local\alire\cache\builds\avrada_rts_2.0.1_92a5f15a\71110aa50bcfe6fa5f256d9be5e6243378c23ab3e5fbf605bd2ecf4935bfaa91\gnat.adc  20250117231900 00000000
+G a e
+G c Z b b [servo standard 12 11 none]
+G r i none [servo standard 12 11 none] [generic_wait_usecs avr__wait 43 14 none]
+G r c none [servo standard 12 11 none] [wait_cycles avr__wait 37 14 none]
+X 3 avr.ads
+26K9*AVR 117e8 11|1w6 2r6 3r6 4r6 6r6 7r5 10r5 13r8 16r6
+49M9*Bit_Number<10|68M9>
+53A9*Bits_In_Byte(boolean)<49M9>
+99V13*Low=99:40{boolean} 11|22s37
+102V13*DD_Output=102:46{boolean} 11|20s25
+X 4 avr-atmega328p.ads
+21K13*ATmega328P 2557e19 11|6w10 7r9
+776m4*OCR1A{10|71M9} 11|41m11 45m11 50m11
+845m4*ICR1{10|71M9} 11|34m8
+966a4*TCCR1B_Bits{3|53A9} 11|29m4
+970m4*CS10_Bit{3|49M9} 11|31r20
+973m4*CS11_Bit{3|49M9} 11|32r20
+979m4*WGM12_Bit{3|49M9} 11|29r20
+982m4*WGM13_Bit{3|49M9} 11|30r20
+996a4*TCCR1A_Bits{3|53A9} 11|25m4
+1003m4*WGM11_Bit{3|49M9} 11|26r20
+1015m4*COM1A1_Bit{3|49M9} 11|25r20
+1436a4*PRR_Bits{3|53A9} 11|22m8
+1449m4*PRTIM1_Bit{3|49M9} 11|22r22
+2482a4*DDRB_Bits{3|53A9} 11|20m8
+X 5 avr-mcu.ads
+3K13*MCU=3:29 11|2w10 13r12 20r4 22r4 22r18 34r4 41r7 45r7 50r7
+X 6 avr-timer1.ads
+22K13*Timer1 120e15 11|3w10
+X 7 avr-wait.ads
+27K13*Wait 77e13 11|4w10 16r10
+43u14*Generic_Wait_USecs 11|16r15
+X 9 avrada_rts_config.ads
+5K9*Avrada_Rts_Config 30e22 11|8w6 16r35
+19N4*Clock_Frequency 11|16r53
+X 10 interfac.ads
+68M9*Unsigned_8
+71M9*Unsigned_16
+X 11 servo.adb
+12U11*servo 12b11 54l5 54t10
+15U15 Wait_1_Sec[7|43] 8|56b14 11|42s7 47s7 51s7
+

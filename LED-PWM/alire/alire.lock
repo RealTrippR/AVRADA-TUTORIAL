@@ -1,0 +1,179 @@
+# THIS FILE IS GENERATED. DO NOT EDIT.
+
+[solution]
+[solution.context]
+solved = true
+[[solution.state]]
+crate = "avrada_lib"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^2.0.2"
+[solution.state.release]
+authors = [
+"Rolf Ebert",
+]
+description = "Library of drivers for AVR microcontrollers"
+licenses = "GPL-2.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"Rolf Ebert <rolf.ebert.gcc@gmx.de>",
+]
+maintainers-logins = [
+"RREE",
+]
+name = "avrada_lib"
+tags = [
+"avr",
+"embedded",
+"drivers",
+]
+version = "2.1.0"
+website = "https://sourceforge.net/projects/avr-ada/"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = false
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.configuration.variables]
+[solution.state.release.configuration.variables.Process_Timing_Events_In_Ticks]
+default = false
+type = "Boolean"
+[solution.state.release.configuration.variables.UART_Receive_Mode]
+default = "polled"
+type = "Enum"
+values = [
+"polled",
+"interrupt",
+]
+[solution.state.release.origin]
+commit = "fe38c6dcc93dc2210cdb1704d9ca2592c5657495"
+url = "git+https://github.com/RREE/AVRAda_Lib.git"
+[[solution.state.release.depends-on]]
+avrada_mcu = "^2.1"
+avrada_rts = "^2.0.1"
+gnat_avr_elf = "^11 | ^12.2"
+[[solution.state]]
+crate = "avrada_mcu"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "(^2.0.2) & (^2.1)"
+[solution.state.release]
+authors = [
+"Rolf Ebert",
+]
+description = "Device (MCU) specific definitions for AVR microcontrollers"
+licenses = "GPL-2.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"Rolf Ebert <rolf.ebert.gcc@gmx.de>",
+]
+maintainers-logins = [
+"RREE",
+]
+name = "avrada_mcu"
+tags = [
+"avr",
+"embedded",
+"rts",
+]
+version = "2.2.0"
+website = "https://sourceforge.net/projects/avr-ada/"
+[solution.state.release.origin]
+commit = "b6f5cf0d6b9e4981ce79c6ed7f3dd28600c08dbf"
+url = "git+https://github.com/RREE/AVRAda_MCU.git"
+[[solution.state.release.depends-on]]
+avrada_rts = "^2.0.1"
+gnat_avr_elf = "^11 | ^12.2"
+[[solution.state]]
+crate = "avrada_rts"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^2.0.1"
+[solution.state.release]
+authors = [
+"Adacore",
+"Rolf Ebert",
+]
+description = "Minimal run time system (RTS) for AVR 8bit controllers"
+licenses = "GPL-2.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"Rolf Ebert <rolf.ebert@gcc.gmx.de>",
+]
+maintainers-logins = [
+"RREE",
+]
+name = "avrada_rts"
+tags = [
+"avr",
+"embedded",
+"rts",
+]
+version = "2.0.1"
+website = "https://sourceforge.net/projects/avr-ada/"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = false
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.configuration.variables]
+[solution.state.release.configuration.variables.AVR_MCU]
+default = "atmega328p"
+type = "String"
+[solution.state.release.configuration.variables.Clock_Frequency]
+default = 0
+first = 0
+last = 9223372036854775807
+type = "Integer"
+[solution.state.release.configuration.variables.Sec_Stack_Size]
+default = 63
+first = 0
+last = 1024
+type = "Integer"
+[solution.state.release.origin]
+commit = "92a5f15aa224e5848fea1be3aa8694f256bae9b6"
+url = "git+https://github.com/RREE/AVRAda_RTS.git"
+[[solution.state.release.depends-on]]
+gnat_avr_elf = "^11 | ^12.2"
+[[solution.state]]
+crate = "gnat_avr_elf"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^11 | ^12.2"
+[solution.state.release]
+auto-gpr-with = false
+description = "The GNAT Ada compiler - AVR cross-compiler"
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"chouteau@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+]
+name = "gnat_avr_elf"
+provides = [
+"gnat=12.2.1",
+]
+version = "12.2.1"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.environment]
+[solution.state.release.environment.PATH]
+prepend = "${CRATE_ROOT}/bin"
+[solution.state.release.origin]
+binary = true
+hashes = [
+"sha256:cd4e475d574d0c1164d676fc541f01e3b205f8291b7a9ba8bac6f37c512760f7",
+]
+url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-12.2.0-1/gnat-avr-elf-windows64-12.2.0-1.tar.gz"
+

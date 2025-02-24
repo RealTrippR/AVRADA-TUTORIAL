@@ -1,0 +1,7 @@
+dependency:avrada_lib=2.1.0=977542c064d17eab9a05791ce2a958f0fe68a767e8a54ccb02ab7ec92619d044
+dependency:avrada_mcu=2.2.0=f134f0b277bcacf4ff20a45fbe1e3040d96b87a1ae6c296fdc6c677d8ca90076
+dependency:avrada_rts=2.0.1=71110aa50bcfe6fa5f256d9be5e6243378c23ab3e5fbf605bd2ecf4935bfaa91
+external:IO_EXAMPLE_LIBRARY_TYPE=default
+external:LIBRARY_TYPE=default
+profile:io_example=DEVELOPMENT
+switches:io_example=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx

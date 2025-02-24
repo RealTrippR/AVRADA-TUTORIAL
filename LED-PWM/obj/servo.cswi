@@ -1,0 +1,15 @@
+20250206041642
+-c
+-x
+ada
+-gnatA
+--RTS=C:\Users\TrippR\AppData\Local\alire\cache\builds\avrada_rts_2.0.1_92a5f15a\71110aa50bcfe6fa5f256d9be5e6243378c23ab3e5fbf605bd2ecf4935bfaa91\
+-gnatef
+-fverbose-asm
+-gnateDMCU=atmega328p
+-fcallgraph-info=su,da
+-ffunction-sections
+-fdata-sections
+-mmcu=atmega328p
+-Og
+-gdwarf-2

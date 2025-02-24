@@ -1,0 +1,2 @@
+last_build_profile = "avrada_lib=RELEASE,avrada_mcu=RELEASE,avrada_rts=RELEASE,gnat_avr_elf=RELEASE,io_example=DEVELOPMENT"
+

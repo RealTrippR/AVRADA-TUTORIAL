@@ -1,0 +1,6 @@
+graph: { title: "b__servo.adb"
+node: { title: "adainit" label: "adainit\nb__servo.adb:11:4\n2 bytes (static)\n0 dynamic objects" }
+node: { title: "main" label: "main\nb__servo.adb:20:4\n2 bytes (static)\n0 dynamic objects" }
+node: { title: "_ada_servo" label: "ada_main_program\nb__servo.adb:17:14" shape : ellipse }
+edge: { sourcename: "main" targetname: "_ada_servo" label: "b__servo.adb:23:7" }
+}
